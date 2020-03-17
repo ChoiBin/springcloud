@@ -9,9 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-provider-payment8001</artifactId>
+    <artifactId>cloud-provider-payment8002</artifactId>
 
-    <description>支付模块</description>
 
 
     <dependencies>
@@ -72,7 +71,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-
-
 </project>

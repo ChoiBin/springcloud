@@ -1,5 +1,6 @@
 server:
-  port: 8001
+  port: 8002
+
 
 spring:
   application:
@@ -27,12 +28,8 @@ eureka:
     fetchRegistry: true
     service-url:
       # 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
-      defaultZone: http://localhost:7001/eureka
-#      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+#      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
-      instance-id: payment8001
+      instance-id: payment8002
       prefer-ip-address: true
-      #eureka客户端向服务器发送心跳的时间间隔，单位为秒，默认30秒
-      lease-renewal-interval-in-seconds: 1
-      #eureka服务器在收到最后一次心跳后等待的时间上限，单位为秒，超过则剔除服务
-      lease-expiration-duration-in-seconds: 2
